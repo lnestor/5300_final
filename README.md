@@ -1,32 +1,47 @@
-# Physics 5300 Final Problem Set
+# How to navigate this repository
 
-## Problem 1
-a) Make a notebook that solves the double pendulum using (11.37) and
-(11.38) in Taylor Section 11.4 (i.e., do not assume the small angle approximation).
-Implement the pendulum code as a Python class (as in our examples).
-__You can use either the Euler-Lagrange or Hamiltonian equations.__
-The basic output will be plots of the two angles as a function of time for given initial conditions.
+I split the final project into several different notebooks, so look here for what each of them contain.
 
-b) Show that the system is chaotic for initial conditions beyond the small angle approximation.
+## Double Pendulum
 
-c) Add Markdown/LaTeX documentation.
+- Double_Pendulum.ipynb
 
-d) Extend your simulation to three pendulums.
+This contains the basic double pendulum class and plots of different orbits.
 
-e) Add widgets to control the simulation and/or animate it.
+- Double_Pendulum_Animation.ipynb
 
-## Problem 2
+This animates a couple different pendulums (notice the trails behind the masses!).
 
-a) Make a notebook that solves the two-body problem for gravitational
-attraction between two bodies (e.g., earth and sun) in Cartesian coordinates. Implement the differential equation code as a Python class (as in our examples).
+- Triple_Pendulum.ipynb
 
-b) Show that the problem reduces to the orbits considered in class if one of the bodies is very heavy and you are in its rest frame.
+Solves the equations of motion for a triple pendulum and plots a few.
 
-c) Add Markdown/LaTeX documentation.
+- Triple_Pendulum_Animation.ipynb
 
-d) Use the Leapfrog method to solve the differential equations and show
-that it conserves energy while using the SciPy ODE solvers do not.
+Animates two different triple pendulums.
 
-e) Extend the simulation to three bodies (i.e., add a planet) in the same plane and comment on the orbits you find.
+## Gravitational Orbits
 
-f) Add widgets to control the simulation and/or animate the orbits.
+- Gravitational_Orbits.ipynb
+
+Solves the Lagrangian equations of motion for two body orbits and plots a few.
+
+- Gravitational_Orbits_Animation.ipynb
+
+As it says, animates a few different two body orbits (no trails behind the masses this time :( ).
+
+- Gravitational_Orbits_Leapfrog.ipynb
+
+Implements the leapfrog algorithm for orbits. Didn't really get to check conservation of energy,
+I spent too much time on Bezier curves.
+
+- Triple_Orbits.ipynb
+
+Solves the equations of motion for three bodies in the same plane and plots two. No animations for
+this one because, let's be real, watching masses move in an orbit isn't nearly as exciting as
+Bezier curves.
+
+## Bezier Curves
+
+I wanted a change of pace from orbits one day so I made some pretty neat curves. Not a part of the project
+at all, but really cool to look at.
